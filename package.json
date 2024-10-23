@@ -1,0 +1,55 @@
+{
+    "name": "valtio-toast",
+    "version": "1.0.0",
+    "description": "A lightweight, type-safe toast notification system using Valtio and Tailwind CSS",
+    "main": "dist/index.js",
+    "module": "dist/index.esm.js",
+    "types": "dist/index.d.ts",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c",
+        "test": "jest",
+        "lint": "eslint src --ext .ts,.tsx",
+        "typecheck": "tsc --noEmit",
+        "prepare": "husky install",
+        "prepublishOnly": "npm run build"
+    },
+    "peerDependencies": {
+        "react": ">=16.8.0",
+        "react-dom": ">=16.8.0",
+        "valtio": ">=1.0.0"
+    },
+    "devDependencies": {
+        "@types/react": "^18.0.0",
+        "@types/react-dom": "^18.0.0",
+        "@typescript-eslint/eslint-plugin": "^5.0.0",
+        "@typescript-eslint/parser": "^5.0.0",
+        "eslint": "^8.0.0",
+        "husky": "^7.0.0",
+        "jest": "^27.0.0",
+        "rollup": "^2.0.0",
+        "rollup-plugin-terser": "^7.0.2",
+        "rollup-plugin-typescript2": "^0.31.0",
+        "typescript": "^4.5.0"
+    },
+    "keywords": [
+        "react",
+        "toast",
+        "notification",
+        "valtio",
+        "tailwindcss",
+        "typescript"
+    ],
+    "author": "Bhanu Pratap Chaudhary",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/bhanuc/valtio-toast"
+    },
+    "bugs": {
+        "url": "https://github.com/bhanuc/valtio-toast/issues"
+    },
+    "homepage": "https://github.com/bhanuc/valtio-toast#readme"
+}

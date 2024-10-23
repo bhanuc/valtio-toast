@@ -1,0 +1,13 @@
+examples/
+test/
+coverage/
+.github/
+.husky/
+src/
+rollup.config.ts
+tsconfig.json
+tsconfig.build.json
+jest.config.ts
+.eslintrc
+.prettierrc
+.gitignore
