@@ -1,0 +1,50 @@
+/* src/styles/toast.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .toast-container {
+    @apply fixed z-50 p-4 pointer-events-none;
+  }
+
+  .toast-item {
+    @apply min-w-toast max-w-md w-full pointer-events-auto overflow-hidden rounded-lg border shadow-lg animate-toast-enter;
+  }
+
+  .toast-content {
+    @apply p-4;
+  }
+
+  .toast-inner {
+    @apply flex items-start;
+  }
+
+  .toast-icon {
+    @apply flex-shrink-0;
+  }
+
+  .toast-message {
+    @apply ml-3 w-0 flex-1;
+  }
+
+  .toast-close {
+    @apply ml-4 flex-shrink-0 flex;
+  }
+
+  .toast-success {
+    @apply bg-green-50 border-green-200;
+  }
+
+  .toast-error {
+    @apply bg-red-50 border-red-200;
+  }
+
+  .toast-warning {
+    @apply bg-yellow-50 border-yellow-200;
+  }
+
+  .toast-info {
+    @apply bg-blue-50 border-blue-200;
+  }
+}

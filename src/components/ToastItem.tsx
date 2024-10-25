@@ -2,6 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { ToastIcon } from './ToastIcon';
 import type { Toast } from '../types';
 
+import '../styles/toast.css';
+
 interface ToastItemProps {
     toast: Toast;
     onRemove: (id: string) => void;

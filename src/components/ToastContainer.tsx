@@ -3,6 +3,7 @@ import { useSnapshot } from 'valtio';
 import { toastState, toastActions } from '../store/toastStore';
 import { ToastItem } from './ToastItem';
 import type { Toast, ToastPosition } from '../types';
+import '../styles/toast.css';
 
 const positionClasses: Record<ToastPosition, string> = {
     'top-right': 'top-0 right-0',

@@ -1,5 +1,8 @@
 import typescript from 'rollup-plugin-typescript2';
 import { terser } from 'rollup-plugin-terser';
+import postcss from 'rollup-plugin-postcss';
+import autoprefixer from 'autoprefixer';
+import tailwindcss from 'tailwindcss';
 import pkg from './package.json';
 
 export default {
@@ -21,6 +24,16 @@ export default {
     ...Object.keys(pkg.dependencies || {}),
   ],
   plugins: [
+    postcss({
+      plugins: [
+        tailwindcss('./tailwind.config.js'),
+        autoprefixer(),
+      ],
+      minimize: true,
+      extract: 'styles.css',
+      modules: false,
+      autoModules: false,
+    }),
     typescript({
       tsconfig: 'tsconfig.build.json',
       clean: true,
