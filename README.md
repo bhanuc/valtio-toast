@@ -32,6 +32,7 @@ yarn add valtio-toast
 ```tsx
 import { ToastProvider } from 'valtio-toast';
 import { useToast } from 'valtio-toast';
+import 'valtio-toast/dist/styles.css';
 
 // Wrap your app with ToastProvider
 function App() {
