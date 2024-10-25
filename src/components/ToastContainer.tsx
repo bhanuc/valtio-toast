@@ -32,8 +32,7 @@ export const ToastContainer: React.FC = () => {
             {Object.entries(groupedToasts).map(([position, toasts]) => (
                 <div
                     key={position}
-                    className={`fixed z-50 p-4 space-y-4 pointer-events-none ${positionClasses[position as ToastPosition]
-                        }`}
+                    className={`fixed z-50 p-4 space-y-4 pointer-events-none ${positionClasses[position as ToastPosition]} min-w-80`}
                 >
                     {toasts.map((toast) => (
                         <ToastItem
