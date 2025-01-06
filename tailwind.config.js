@@ -19,6 +19,9 @@ module.exports = {
         animation: {
           'toast-enter': 'toast-enter 0.3s ease-out',
           'toast-exit': 'toast-exit 0.3s ease-in'
+        },
+        zIndex: {
+          '100': '100',
         }
       }
     },
