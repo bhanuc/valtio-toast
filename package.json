@@ -1,6 +1,6 @@
 {
     "name": "valtio-toast",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A lightweight, type-safe toast notification system using Valtio and Tailwind CSS",
     "main": "dist/index.js",
     "module": "dist/index.esm.js",
